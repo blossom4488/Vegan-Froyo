@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+<link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Vegan Froyo &mdash; 1st Vegan Yogurt Shop</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <img  id= "logo-icon" src="logo.png" alt="vegan-froyo-company-logo">
+      <button class="order-btn">Order Online</button>
+      <nav class="nav-section">
+        <a href="#menu-section" class="nav-link">Menu</a>
+        <a href="#testimonial-section" class="nav-link">Our Reviews</a>
+        <a href="#signup-section" class="nav-link">Newsletter</a>
+        <a href="#about_us_section" class="nav-link">Our Story</a>
+        <a href="#contact-us-section" class="nav-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <section class="monthly-flavor-section">
+      <div class="info-monthly-flavor">
+        <h2>Flavor of the Month</h2>
+        <p>
+          Are you craving a sweet and sour yogurt? Come try our Pomegranate yogurt, our new flavor of the month! Add chia seeds for a chewy texture. 
+        </p>
+      </div>
+      <img class="monthly-flavor-pic" src="pomegranate-yogurt.avif" alt="pomgranate-yogurt-chia-seeds" />
+    </section>
+
+    <section class="menu-section" id="menu-section">
+      <div id="first-slide">
+        <img src="toppings.avif" alt="fruit-toppings" class="topping-pic" />
+        <div class="menu-title" onclick="removeImage()">
+          <h2>Menu</h2>
+          <ion-icon
+          class="right-icon"
+          
+          name="chevron-forward-circle-outline"
+        ></ion-icon>
+        </div>
+       
+      </div>
+
+      <div class="menu" id="back-slide">
+        <h3>How to Order:</h3>
+        <ol class="menu-info">
+          <div>
+            <h3>
+              <li class="num-list">Pick a Flavor</li>
+            </h3>
+            <ul>
+              <li>Ube</li>
+              <li>Mango</li>
+              <li>Peach</li>
+              <li>Strawberry</li>
+              <li>Pistachio</li>
+              <li>Cherry</li>
+              <li>Vanilla</li>
+              <li>Chocolate</li>
+              <li>Flavor of Day (Ask Us)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>
+              <li class="num-list">Pick Two Toppings</li>
+            </h3>
+            <ul>
+              <li>Almonds</li>
+              <li>Granola</li>
+              <li>Strawberry</li>
+              <li>Raspberry</li>
+              <li>Blueberry</li>
+              <li>Banana</li>
+              <li>Kiwi</li>
+              <li>Apple</li>
+              <li>Chocolate Chips</li>
+              <li>Agave</li>
+              <li>Maple Syrup</li>
+              <li>Unique Topping of the Day (Ask Us)</li>
+            </ul>
+          </div>
+          <div>
+            <h3><li class="num-list">Pick a Size</li></h3>
+            <ul>
+              <li>Small (8 oz) $3.99</li>
+              <li>Medium (16 oz) $6.99</li>
+              <li>Large (24 oz) $8.99</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Product Information</h3>
+            <ul class="product-icon">
+              <li>
+                <ion-icon class="icon" name="leaf-outline"></ion-icon>Vegan
+              </li>
+              <li>
+                <ion-icon class="icon" name="globe-outline"></ion-icon>Organic
+              </li>
+              <li>
+                <ion-icon class="icon" name="ban-outline"></ion-icon>Gluten-Free
+              </li>
+            </ul>
+          </div>
+          <div><button  class="order-btn close-btn" onclick="addImage()">Close Menu</button></div>
+        </ol>
+      </div>
+      
+    </section>
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial-section" id="testimonial-section">
+      <h2>Our Reviews</h2>
+      <div class="testimonial-container">
+        <figure class="testimonial-1">
+          <img
+            class="testimonial-pic"
+            src="testimonial-1.avif"
+            alt="girl-smiling"
+          />
+          <div class="testimonial-content">
+            <blockquote>
+              "It was my first time visiting Vegan Froyo, and it was delicious and healthy. I would definitely recommend it to others"
+            </blockquote>
+
+            <p>- Lisa Murray</p>
+          </div>
+        </figure>
+        <figure class="testimonial-1">
+          <img
+            class="testimonial-pic"
+            src="testimonial-2.avif"
+            alt="guy-smiling"
+          />
+          <div class="testimonial-content">
+            <blockquote>
+              "The owner was friendly and helpful. The yogurt flavors are truly unique and are made fresh. I will come back soon!"
+            </blockquote>
+
+            <p>- Chris Smith</p>
+          </div>
+        </figure>
+        <figure class="testimonial-1">
+          <img
+            class="testimonial-pic"
+            src="testimonial-3.avif"
+            alt="guy-smiling-2"
+          />
+          <div class="testimonial-content">
+            <blockquote>
+              "The staff and owner were friendly and knowledgeable about the products. I love the ube yogurt! "
+            </blockquote>
+
+            <p>- Alex Hudson</p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!--NEWSLETTER FORM -->
+
+    <section class="signup-section"id="signup-section">
+      <img
+        class="yogurt-bowl-img"
+        src="yogurt-bowl.avif"
+        alt="strawberry-yogurt-berry-toppings"
+      />
+
+      <form class="signup-form" action="submit">
+        <h2 class="signup-title">Sign Up for Our Newsletter!</h2>
+        <p>
+          Our newsletter will have information on new flavors and toppings. Also, we have various specials on our products!
+
+        </p>
+        <div class="form-fields">
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" required />
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" required />
+          <label for="email">Email Address:</label>
+          <input type="text" name="email" id="email" required />
+          <button class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-us" id="about_us_section">
+      <div>
+        <h2>Our Story</h2>
+        <p>
+          Established in early 2022, a young girl named Elfrieda Jeane, wanted more vegan options at a popular local yogurt chain. She also wanted to try an unique flavor that was not commonly found at stores or shops. She took a couple of months to test new flavors and existing flavors. Vegan Froyo was born! 
+        </p>
+      </div>
+      <img
+        class="about-us-img"
+        src="yogurt-in-a-cup.avif"
+        alt="plain-yogurt-berries-dropping-in-a-cup"
+      />
+    </section>
+    <!-- CONTACT US -->
+    <section id="contact-us-section">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <img  class= "logo-icon" src="logo.png" alt="vegan-froyo-company-logo">
+      <div>
+      <p>Vegan Froyo</p>
+      <p>1234 Rose Ave</p>
+      <p>Las Vegas, NV 89139</p>
+      <p>702-123-4567</p>
+      <p>Emailaddress@gmail.com</p>
+      <div class="social-media-icons">
+      <a href="#"><ion-icon class="social-media-logo"name="logo-instagram"></ion-icon></a>
+      <a href="#"><ion-icon class="social-media-logo" name="logo-twitter"></ion-icon></a>
+      <a href="#"><ion-icon class="social-media-logo" name="logo-facebook"></ion-icon></a>
+    </div>
+    
+    </div>
+    <div>
+      <p>
+      Hours
+    </p>
+    <p>
+      Monday to Friday: 10AM-8PM
+    </p>
+    <p>
+      Saturday-Sunday: 10AM-9PM
+    </p>
+  </div>
+    </div>
+    </section>
+  </div>
+
+    <footer>&#169; 2022 Vegan Company</footer>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
